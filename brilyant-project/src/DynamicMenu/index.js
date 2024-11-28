@@ -65,7 +65,7 @@ const DynamicMenu = () => {
   };
 
   return (
-    <div className="App">
+    <div className="dynamic-menu-container">
       <h1>Dynamic Multi-Level Menu</h1>
       <div className="input-section">
         <input

@@ -1,4 +1,4 @@
-/* Container for the whole menu */
+
 .multi-level-menu {
     font-family: 'Arial', sans-serif;
     width: 300px;
@@ -12,15 +12,13 @@
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   }
   
-  /* Header styling */
-  h1 {
+  .multi-level-menu h1 {
     text-align: center;
     font-size: 24px;
     color: #333;
     margin-bottom: 20px;
   }
   
-  /* Menu list styling */
   .menu {
     list-style-type: none;
     padding-left: 0;
@@ -30,8 +28,6 @@
   .menu-item {
     margin: 5px 0;
   }
-  
-  /* Menu label styling */
   .menu-label {
     cursor: pointer;
     display: flex;
@@ -45,37 +41,31 @@
     font-weight: 600;
   }
   
-  /* Hover effect on menu label */
   .menu-label:hover {
     background-color: #e1e1e1;
     transform: scale(1.05);
   }
   
-  /* Styling for expanded menu items */
   .menu-label.expanded {
     font-weight: bold;
     color: #007bff;
   }
-  
-  /* Submenu styling */
+
   .submenu {
     padding-left: 20px;
     margin-top: 10px;
   }
   
-  /* Arrow styling */
   .arrow {
     font-size: 1.1em;
     color: #777;
     transition: transform 0.2s ease;
   }
   
-  /* Rotate arrow when the menu is expanded */
   .menu-label.expanded .arrow {
     transform: rotate(90deg);
   }
-  
-  /* Input section styling */
+
   .input-section {
     margin-bottom: 20px;
     display: flex;
@@ -108,7 +98,6 @@
     background-color: #218838;
   }
   
-  /* Add Menu Button */
   .add-menu-btn {
     margin-bottom: 15px;
     padding: 12px 20px;
