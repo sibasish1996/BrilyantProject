@@ -34,14 +34,12 @@ const DragAndDrop_List = () => {
         setItems(updatedItems);
         setEditId(null); 
       } else {
-        // Add new item
         setItems([...items, { id: Date.now().toString(), content: newItem }]);
       }
       setNewItem(''); 
     }
   };
 
-  // Start editing an item
   const handleEditItem = (id) => {
     const itemToEdit = items.find((item) => item.id === id);
     setEditId(id);
@@ -82,7 +80,7 @@ const DragAndDrop_List = () => {
                       {...provided.draggableProps}
                       {...provided.dragHandleProps}
                     >
-                      <span>{item.content}</span>
+                      <span style={{color: "gray"}}>{item.content}</span>
                       <div className="item-actions">
                         <button onClick={() => handleEditItem(item.id)}>Edit</button>
                         <button onClick={() => handleDeleteItem(item.id)}>
